@@ -90,6 +90,78 @@
   z-index: -1;
 }
 
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+  .text {
+    margin-left: 2rem;
+  }
+
+  .text h1 {
+    font-size: 7rem;
+  }
+
+  .imageContainer {
+    width: 40rem;
+    margin-bottom: 7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .text h1 {
+    font-size: 5rem;
+  }
+
+  .imageContainer {
+    width: 35rem;
+    margin-right: 2rem;
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .text {
+    width: 80%;
+  }
+
+  .text h2 {
+    margin-bottom: 5rem;
+  }
+
+  .text h1 {
+    font-size: 4rem;
+    margin-bottom: 5rem;
+  }
+
+  .text p {
+    font-size: 2rem;
+  }
+
+  .imageContainer {
+    position: absolute;
+    bottom: 5rem;
+    right: 0;
+    width: 12rem;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .text {
+    margin-bottom: 2rem;
+  }
+
+  .imageContainer {
+    bottom: 3rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .text h1 {
+    font-size: 3rem;
+  }
+}
+
+/* Animation */
 @keyframes clip-gradient {
   0% {
     clip-path: polygon(0 64%, 100% 15%, 100% 100%, 0 100%);
