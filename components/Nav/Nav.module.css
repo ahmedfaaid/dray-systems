@@ -1,0 +1,15 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+}
+
+.logo {
+  display: block;
+  width: 13rem;
+}
+
+.logo img {
+  width: 100%;
+}

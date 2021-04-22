@@ -1,3 +1,12 @@
+import Nav from './Nav';
+
 export default function Layout({ children }) {
-  return <div>{children}</div>;
+  return (
+    <div>
+      <header>
+        <Nav />
+      </header>
+      {children}
+    </div>
+  );
 }
