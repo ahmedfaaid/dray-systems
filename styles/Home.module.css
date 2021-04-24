@@ -91,6 +91,27 @@
 }
 
 /* Mobile Responsiveness */
+@media (min-width: 1440px) {
+  .hero {
+    justify-content: center;
+  }
+
+  .text {
+    margin-left: 0;
+    margin-right: 10rem;
+  }
+
+  .imageContainer {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 2560px) {
+  .text {
+    width: 30%;
+  }
+}
+
 @media (max-width: 1024px) {
   .text {
     margin-left: 2rem;
