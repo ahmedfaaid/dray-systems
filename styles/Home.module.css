@@ -21,7 +21,7 @@
   font-size: 3rem;
   font-weight: 300;
   margin-bottom: 2rem;
-  color: #73288b;
+  color: #2e58a6;
   text-transform: uppercase;
 }
 
@@ -57,22 +57,6 @@
   left: 0;
   animation: clip-gradient 10s ease-in-out infinite alternate;
   /* background-image: linear-gradient(
-    to right bottom,
-    #ffffff,
-    #ffffff,
-    #ffffff,
-    #ffffff,
-    #ffffff,
-    #efedf7,
-    #e1dcef,
-    #d3cae7,
-    #b7a3d3,
-    #9e7cbd,
-    #8854a5,
-    #73288b
-  );
-  clip-path: polygon(0 64%, 100% 15%, 100% 100%, 0 100%); */
-  background-image: linear-gradient(
     to bottom,
     #ffffff,
     #ffffff,
@@ -86,6 +70,21 @@
     #9e7cbd,
     #8854a5,
     #73288b
+  ); */
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #f1eff7,
+    #e2e0f0,
+    #d3d1e8,
+    #b0b0d7,
+    #8b91c6,
+    #6373b6,
+    #2e58a6
   );
   z-index: -1;
 }

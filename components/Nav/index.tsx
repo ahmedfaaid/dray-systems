@@ -6,7 +6,8 @@ export default function Nav() {
     <nav className={styles.nav}>
       <Link href='/'>
         <a className={styles.logo}>
-          <img src='/logo/dray-logo-purple.png' alt='Dray Systems' />
+          {/* <img src='/logo/dray-logo-purple.png' alt='Dray Systems' /> */}
+          <img src='/logo/dray-logo-blue.png' alt='Dray Systems' />
         </a>
       </Link>
     </nav>
