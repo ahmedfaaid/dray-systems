@@ -7,8 +7,8 @@ interface ISeo {
 
 export default function Seo({ page }: ISeo) {
   const pageTitle = page
-    ? `${page} - Tritan Group - ${hook}`
-    : `Tritan Group - ${hook}`;
+    ? `${page} - Dray Systems - ${hook}`
+    : `Dray Systems - ${hook}`;
 
   const siteTitle = pageTitle || defaultTitle;
 
