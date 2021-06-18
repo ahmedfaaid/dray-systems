@@ -15,8 +15,12 @@ export default function Home() {
           <h2>Join our mailing list for updates</h2>
           <form>
             <div className={styles.formField}>
-              <label htmlFor='name'>Name:</label>
-              <input type='text' name='Name' placeholder='Elizabeth Swann' />
+              <label htmlFor='firstName'>First Name:</label>
+              <input type='text' name='firstName' placeholder='Elizabeth' />
+            </div>
+            <div className={styles.formField}>
+              <label htmlFor='lastName'>Last Name:</label>
+              <input type='text' name='lastName' placeholder='Swann' />
             </div>
             <div className={styles.formField}>
               <label htmlFor='email'>Email:</label>
