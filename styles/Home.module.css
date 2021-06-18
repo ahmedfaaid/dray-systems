@@ -1,6 +1,6 @@
 .hero {
   width: 100%;
-  height: calc(100vh - 10rem);
+  min-height: calc(100vh - 10rem);
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -41,11 +41,15 @@
 }
 
 /* Form container styles */
+.formContainer {
+  margin-right: 4rem;
+}
+
 .formContainer h2 {
   font-size: 4rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.1;
-  margin-bottom: 3.5rem;
+  margin-bottom: 4rem;
 }
 
 .formContainer form {
@@ -55,6 +59,7 @@
 .formField {
   display: flex;
   align-items: center;
+  margin-bottom: 4rem;
 }
 
 .formField:not(:last-of-type) {
@@ -62,13 +67,13 @@
 }
 
 .formField label {
-  width: 20rem;
+  width: 18rem;
   font-size: 2rem;
   font-weight: 700;
 }
 
 .formField input {
-  width: 40rem;
+  width: 100%;
   padding: 1.4rem;
   border-radius: 0.8rem;
   box-shadow: 0 3px 10px rgba(100, 40, 40, 0.1), 0 5px 15px rgba(0, 0, 0, 0.15);
@@ -175,10 +180,6 @@
     margin-left: 0;
     margin-right: 10rem;
   }
-
-  .imageContainer {
-    margin-right: 0;
-  }
 }
 
 @media (min-width: 2560px) {
@@ -196,29 +197,69 @@
     font-size: 7rem;
   }
 
-  .imageContainer {
+  .formContainer {
     width: 40rem;
-    margin-bottom: 7rem;
+    margin-right: 2rem;
+  }
+
+  .formContainer h2 {
+    font-size: 3rem;
+  }
+
+  .formField {
+    margin-bottom: 3rem;
   }
 }
 
 @media (max-width: 768px) {
+  .hero {
+    display: block;
+    padding-bottom: 5rem;
+  }
+
+  .text {
+    width: 80%;
+    margin-top: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   .text h1 {
     font-size: 5rem;
   }
 
-  .imageContainer {
-    width: 35rem;
-    margin-right: 2rem;
-    margin-bottom: 4rem;
+  .formContainer {
+    width: 80%;
+    margin-top: 8rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .formField:not(:last-of-type) {
+    margin-bottom: 2rem;
+  }
+
+  .formContainer h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+    margin-bottom: 3.5rem;
+  }
+
+  .formContainer label {
+    font-size: 1.8rem;
+  }
+
+  .formContainer input {
+    width: 100%;
+    padding: 1.2rem;
+  }
+
+  .formField input[type='text'] {
+    font-size: 1.4rem;
   }
 }
 
 @media (max-width: 425px) {
-  .text {
-    width: 80%;
-  }
-
   .text h2 {
     margin-bottom: 5rem;
   }
@@ -232,12 +273,12 @@
     font-size: 2rem;
   }
 
-  .imageContainer {
-    position: absolute;
-    bottom: 5rem;
-    right: 0;
-    width: 12rem;
-    margin-bottom: 0;
+  .formContainer {
+    margin-top: 4rem;
+  }
+
+  .formContainer h2 {
+    font-size: 2rem;
   }
 }
 
@@ -246,7 +287,7 @@
     margin-bottom: 2rem;
   }
 
-  .imageContainer {
+  .formContainer {
     bottom: 3rem;
   }
 }
