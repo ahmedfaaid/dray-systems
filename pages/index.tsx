@@ -1,7 +1,6 @@
-import Head from 'next/head';
 import Layout from '../components/layout';
 import styles from '../styles/Home.module.css';
-import Construction from '../public/undraw_QA_engineers_dg5p.svg';
+// import Construction from '../public/undraw_QA_engineers_dg5p.svg';
 
 export default function Home() {
   return (
@@ -12,8 +11,30 @@ export default function Home() {
           <h1>Automated Manpower Coordination</h1>
           <p>Manage candidate status, availability and scheduling.</p>
         </div>
-        <div className={styles.imageContainer}>
-          <Construction className={styles.image} alt='Construction' />
+        <div className={styles.formContainer}>
+          <h2>Join our mailing list for updates</h2>
+          <form>
+            <div className={styles.formField}>
+              <label htmlFor='name'>Name:</label>
+              <input type='text' name='Name' placeholder='Elizabeth Swann' />
+            </div>
+            <div className={styles.formField}>
+              <label htmlFor='email'>Email:</label>
+              <input
+                type='text'
+                name='email'
+                placeholder='e.swann@yourcompany.com'
+              />
+            </div>
+            <div className={styles.formField}>
+              <label htmlFor='company'>Company Name:</label>
+              <input type='text' name='company' placeholder='Your Company' />
+            </div>
+            <div className={styles.submit}>
+              <button type='submit'>Join Mailing List</button>
+            </div>
+          </form>
+          {/* <Construction className={styles.image} alt='Construction' /> */}
         </div>
         <div className={styles.gradient} />
       </div>
