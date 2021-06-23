@@ -12,7 +12,7 @@
 .text {
   width: 45%;
   margin-left: 4rem;
-  padding: 2rem 0 3rem 3rem;
+  padding: 2rem 0 5rem 3rem;
   border-radius: 2rem;
   border-bottom-right-radius: 0;
   border-top-left-radius: 0;
@@ -59,9 +59,10 @@
 .formField {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
-.formField:not(:last-of-type) {
+.formField:not(:nth-of-type(4)) {
   margin-bottom: 2rem;
 }
 
@@ -92,8 +93,28 @@
   color: #e7e7e7;
 }
 
+.close {
+  position: absolute;
+  right: 1rem;
+  fill: #f32013;
+}
+
+.error_detail {
+  height: 4rem;
+  position: relative;
+}
+
+.error_detail p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.4rem;
+  color: #f32013;
+}
+
 .submit {
-  margin-top: 4rem;
+  /* margin-top: 2rem; */
   text-align: right;
 }
 
@@ -111,6 +132,11 @@
 
 .submit button:hover {
   background-color: #6373b6;
+}
+
+.submit button:disabled {
+  background-color: #6373b6;
+  cursor: not-allowed;
 }
 
 /* Image styles */
